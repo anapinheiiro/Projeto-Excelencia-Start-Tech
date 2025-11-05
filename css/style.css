@@ -579,4 +579,72 @@ button:hover {
 
 
 
-/* ................... FIM CONTEÚDO PRINCIPAL INTRODUÇÃO ....................  */
+
+/* .........................SEÇÃO VIDEO.......................  */
+
+
+.secao-video {
+    flex-direction: column;
+    align-items: end;
+    display: flex;
+    padding: 20px 80px;
+    gap: 2px;   
+    
+}
+
+.titulo-video {
+    font-family: 'Rezland', sans-serif;
+    font-weight: 100;
+}
+
+.texto-video {
+    max-width: 400px;
+}
+
+.linha-branca {
+
+    flex-basis: 100%;
+    order: 99;
+    align-self: stretch;
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px 0 0 0;
+}
+
+.classetextovideo {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* espaço entre ícone e textos */
+    margin: 8px 0 20px 0;
+    flex-wrap: wrap; /* permite que a linha (hr) quebre para a próxima linha */
+}
+
+.imagemvideo {
+    width: 48px; /* tamanho do ícone */
+    height: auto;
+    margin: 0; /* removido margin-bottom para ficar alinhado ao centro */
+    flex: 0 0 auto;
+    display: block;
+}
+
+.videos {
+    position: absolute;
+}
+
+
+/* Responsividade: em telas pequenas empilha o ícone acima do texto */
+@media screen and (max-width: 830px) {
+    .classetextovideo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .imagemvideo {
+        width: 56px;
+        margin-bottom: 6px;
+    }
+}
+
+
+
